@@ -16,7 +16,8 @@ const tweet = async (status) => {
 (async () => {
   try {
     const myTweet = 
-          `Checkout this Algorithms and Data Structures in JavaScript Repo on @github https://bit.ly/3olSRe0 ${tagsArray}` ;
+          `#Checkout this #Algorithms and #Data #Structures in #JavaScript #Repo on @github https://bit.ly/3olSRe0 
+          Follow: @NiKs290192` ;
 
     await tweet(myTweet);
   } catch (err) {
