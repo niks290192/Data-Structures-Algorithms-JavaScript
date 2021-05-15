@@ -1,6 +1,6 @@
 const {TwitterClient} = require('twitter-api-client');
 
-const tagsArray = "#algorithms #datastructures #programming"
+const tagsArray = "#algorithms #datastructures #programming #javascript"
 
 const tweet = async (status) => {
   const twitterClient = new TwitterClient({
