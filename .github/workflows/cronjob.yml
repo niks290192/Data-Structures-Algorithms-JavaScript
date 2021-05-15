@@ -1,12 +1,12 @@
-name: Twitter bot
+name: TwitterBot
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 1 * * *"
 
 jobs:
   build:
-    name: Tweet about the new playlists
+    name: Tweeting Repo Info
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
