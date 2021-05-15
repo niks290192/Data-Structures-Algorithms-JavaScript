@@ -1,6 +1,4 @@
-const {TwitterClient} = require('twitter-api-client');
-
-const tagsArray = "#algorithms #datastructures #programming #javascript"
+const { TwitterClient } = require('twitter-api-client');
 
 const tweet = async (status) => {
   const twitterClient = new TwitterClient({
@@ -10,13 +8,13 @@ const tweet = async (status) => {
     accessTokenSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
   });
 
-  await twitterClient.tweets.statusesUpdate({status});
+  await twitterClient.tweets.statusesUpdate({ status });
 };
 
 (async () => {
   try {
-    const myTweet = 
-          `#Checkout this #Algorithms and #Data #Structures in #JavaScript #Repo on @github https://bit.ly/3olSRe0 
+    const myTweet =
+      `#Checkout this #Algorithms and #Data #Structures in #JavaScript #Repo on @github https://bit.ly/3olSRe0 
           Follow: @NiKs290192` ;
 
     await tweet(myTweet);
