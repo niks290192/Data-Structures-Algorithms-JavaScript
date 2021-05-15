@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install Dependencies
-        run:  cd twitterBot && npm ci
+        run:  cd twitterBot && npm i
       - name: Run Twitter bot
         run: npm run twitter
         env:
