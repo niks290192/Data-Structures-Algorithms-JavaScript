@@ -18,7 +18,7 @@ jobs:
       - name: Install Dependencies
         run:  cd twitterBot && npm i
       - name: Run Twitter bot
-        run: npm run twitter
+        run: cd twitterBot npm run twitter
         env:
           TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
           TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
