@@ -1,5 +1,7 @@
 const {TwitterClient} = require('twitter-api-client');
 
+const tagsArray = "#algorithms #datastructures #programming"
+
 const tweet = async (status) => {
   const twitterClient = new TwitterClient({
     apiKey: process.env.TWITTER_API_KEY,
@@ -14,7 +16,7 @@ const tweet = async (status) => {
 (async () => {
   try {
     const myTweet = 
-          `Checkout @niks290192 on Github`;
+          `Checkout this Algorithms and Data Structures in JavaScript Repo on @github https://bit.ly/3olSRe0 ${tagsArray}` ;
 
     await tweet(myTweet);
   } catch (err) {
