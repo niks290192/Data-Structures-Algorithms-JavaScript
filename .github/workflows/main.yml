@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Tweet about the new playlists
+    name: Tweet about the new Repo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
