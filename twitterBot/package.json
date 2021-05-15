@@ -1,0 +1,11 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "twitter.js",
+  "scripts": {
+    "twitter":"node ./twitter.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
