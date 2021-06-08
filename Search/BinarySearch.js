@@ -11,7 +11,7 @@ function binarySearch(arr, x, low = 0, high = arr.length - 1) {
     const mid = Math.floor(low + (high - low) / 2)
 
     if (high >= low) {
-        if(arr[mid] === x) {
+        if (arr[mid] === x) {
             // item found => return its index
             return mid
         }
@@ -28,3 +28,43 @@ function binarySearch(arr, x, low = 0, high = arr.length - 1) {
         return -1
     }
 }
+
+/* -------------------------------------- Test ---------------------------------------- */
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const stringArr = [
+    'Alpha',
+    'Bravo',
+    'Charlie',
+    'Delta',
+    'Echo',
+    'Foxtrot',
+    'Golf',
+    'Hotel',
+    'India',
+    'Juliet',
+    'Kilo',
+    'Lima',
+    'Mike',
+    'November',
+    'Oscar',
+    'Papa',
+    'Quebec',
+    'Romeo',
+    'Sierra',
+    'Tango',
+    'Uniform',
+    'Victor',
+    'Whiskey',
+    'X-Ray',
+    'Yankee',
+    'Zulu'
+]
+
+console.log(binarySearch(arr, 3))
+console.log(binarySearch(arr, 7))
+console.log(binarySearch(arr, 13))
+
+console.log(binarySearch(stringArr, 'Charlie'))
+console.log(binarySearch(stringArr, 'Zulu'))
+console.log(stringArr, 'Sierra')
